@@ -8,6 +8,22 @@ package part03;
 //
 // There is no main method here yet. Typing it is part of the challenge.
 
+import java.util.Scanner;
+
 public class Challenge {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter an adjective: ");
+        String adj = scanner.nextLine();
+
+        System.out.print("Enter a noun: ");
+        String noun = scanner.nextLine();
+
+        System.out.println("\n--- Your Mad Libs Story ---");
+        System.out.println("The " + adj + " programmer wrote code that printed a " + noun + " on the screen.");
+
+        scanner.close();
+    }
 }
