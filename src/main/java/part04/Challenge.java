@@ -8,6 +8,20 @@ package part04;
 //
 // There is no main method here yet. Typing it is part of the challenge.
 
+import javax.swing.JOptionPane;
+
 public class Challenge {
 
+    public static void main(String[] args) {
+        // Prompt for the bill amount
+        String billStr = JOptionPane.showInputDialog("Enter the bill amount:");
+        double bill = Double.parseDouble(billStr);
+
+        // Calculate a 15% tip
+        double tip = bill * 0.15;
+        double total = bill + tip;
+
+        // Show the results in a pop-up window
+        JOptionPane.showMessageDialog(null, "Tip: $" + tip + "\nTotal: $" + total);
+    }
 }
