@@ -9,5 +9,11 @@ package part01;
 // There is no main method here yet. Typing it is part of the challenge.
 
 public class Challenge {
+    public static void main(String[] args) {
+        // Use System.out.println to draw your picture here!
+        System.out.println("  /\\ ");
+        System.out.println(" /  \\");
+        System.out.println("/____\\");
+    }
 
 }
